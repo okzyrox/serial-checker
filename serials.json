@@ -1,0 +1,17 @@
+{
+    "XAW1":{
+        "unpatched": {
+            "min":"XAW10000000000",
+            "max":"XAW10074000000"
+
+        },
+        "possibly patched": {
+            "min":"XAW10075000000",
+            "max":"XAW10120000000"
+        },
+        "patched":{
+            "min":"XAW40012000000" 
+        }
+        
+    }
+}
