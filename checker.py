@@ -38,7 +38,7 @@ while serial_invalid:
         print("Invalid Serial Code")
 
 
-print("Enter the first 6 digits of your Switch's serial code following the first four letters/numbers ")
+print("Enter the remaining digits of your Switch's serial code following the first four letters/numbers ")
 print("This does not include the first four numbers/letters, such as XAJ4 or XAW1")
 sixdig = input()
 
