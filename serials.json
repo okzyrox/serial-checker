@@ -13,5 +13,75 @@
             "min":"XAW40012000000" 
         }
         
+    },
+    "XAW4":{
+        "unpatched": {
+            "min":"XAW40000000000",
+            "max":"XAW40011000000"
+
+        },
+        "possibly patched": {
+            "min":"XAW40011000000",
+            "max":"XAW40012000000"
+        },
+        "patched":{
+            "min":"XAW40012000000" 
+        }
+    },
+    "XAW7":{
+        "unpatched": {
+            "min":"XAW70000000000",
+            "max":"XAW70017500000"
+
+        },
+        "possibly patched": {
+            "min":"XAW70017500000",
+            "max":"XAW70030000000"
+        },
+        "patched":{
+            "min":"XAW70030000000" 
+        }
+    },
+    "XAJ1":{
+        "unpatched": {
+            "min":"XAJ10000000000",
+            "max":"XAJ10020000000"
+
+        },
+        "possibly patched": {
+            "min":"XAJ10020000000",
+            "max":"XAJ10030000000"
+        },
+        "patched":{
+            "min":"XAJ10030000000" 
+        }
+    },
+    "XAJ4":{
+        "unpatched": {
+            "min":"XAJ40000000000",
+            "max":"XAJ40046000000"
+
+        },
+        "possibly patched": {
+            "min":"XAJ40046000000",
+            "max":"XAJ40083000000"
+        },
+        "patched":{
+            "min":"XAJ40083000000" 
+        }
+    },
+    "XAJ7":{
+        "unpatched": {
+            "min":"XAJ70000000000",
+            "max":"XAJ70040000000"
+
+        },
+        "possibly patched": {
+            "min":"XAJ70040000000",
+            "max":"XAJ70050000000"
+        },
+        "patched":{
+            "min":"XAJ70050000000" 
+        }
     }
 }
