@@ -21,3 +21,6 @@ It should be mostly reliable, however there can be false-positives that this sof
 ## What about the Switch OLED or Lite?
 
 Confirmed patched, including the 2019/2018 HAC-001(-01) release of the base switch, although you can bypass it through other means.
+
+## 'I have a better/more reliable method of doing this'
+Good for you, If you'd like, you can edit the code freely then do a pull request to the main branch.
