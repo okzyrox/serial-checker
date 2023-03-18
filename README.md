@@ -24,3 +24,20 @@ Confirmed patched, including the 2019/2018 HAC-001(-01) release of the base swit
 
 ## 'I have a better/more reliable method of doing this'
 Good for you, If you'd like, you can edit the code freely then do a pull request to the main branch.
+
+# Usage
+
+## How to use
+
+1. Download or clone the project into a folder.
+
+2. With Python installed, either run `checker.py` or `checker_gui.py` via 
+```bat
+python checker.py
+```
+or for unix users:
+```sh
+python3 checker.py
+```
+
+3. Profit
