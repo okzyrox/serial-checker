@@ -96,7 +96,7 @@ if skipCheck == False:
     if unpatched_l[1] == n:
         print("Congrats, your switch isn't patched!")
         x = input("Want to double check? (Y/N)")
-        if x == "Y":
+        if x.upper() == "Y":
             if probpatch_l[1] == n:
                 print("Possibly patched from check 2")
             else:
