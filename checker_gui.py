@@ -10,6 +10,8 @@ with open("serials.json", "r") as serial_json:
 
 root = tk.Tk()
 root.title("Serial Code Checker GUI")
+photo = tk.PhotoImage(file = 'icon.png')
+root.wm_iconphoto(False, photo)
 root.geometry("400x300")
 
 type_serial = tk.StringVar()
