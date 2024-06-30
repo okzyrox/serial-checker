@@ -42,22 +42,23 @@ while serial_invalid:
     if usrtype in types:
         serial_invalid = False
     elif usrtype in other_types:
-        if usrtype == "XKW1" or usrtype == "XKJ1":
-            print("You have a 'Mariko' switch, which has been patched unfornately")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XAK":
-            print("You own a Korean nintendo switch, not much info is known about them, so it may or may not be patched.")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XAW9":
-            print("You own a refurbished Nintendo Switch sold directly from Nintendo, they're probably patched if it was refurbished before the switch's \n 'Mariko' mainline switch patch, however false positives have been more likely with these versions")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XWW1":
-            print("Your Switch is 100% Patched")
-            skipCheck = True
-            serial_invalid = False
+        match usrtype:
+            case "XKW1" | "XKJ1":
+                print("You have a 'Mariko' switch, which has been patched unfortunately")
+                skipCheck = True
+                serial_invalid = False
+            case "XAK":
+                print("You own a Korean nintendo switch, not much info is known about them, so it may or may not be patched.")
+                skipCheck = True
+                serial_invalid = False
+            case "XAW9":
+                print("You own a refurbished Nintendo Switch sold directly from Nintendo, they're probably patched if it was refurbished before the switch's \n 'Mariko' mainline switch patch, however false positives have been more likely with these versions")
+                skipCheck = True
+                serial_invalid = False
+            case "XWW1":
+                print("Your Switch is 100% Patched")
+                skipCheck = True
+                serial_invalid = False
     else:
         print("Invalid Serial Code")
 
