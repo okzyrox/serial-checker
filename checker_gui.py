@@ -35,22 +35,23 @@ def serial_compat(serialtype, serialcode):
     usrcode = serialcode
 
     if usrtype in options:
-        if usrtype == "XKW1" or usrtype == "XKJ1":
-            messagebox.showerror("Serial Checker","You have a 'Mariko' switch, which has been patched unfornately")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XAK":
-            messagebox.showwarning("Serial Checker","You own a Korean nintendo switch, not much info is known about them, so it may or may not be patched.")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XAW9":
-            messagebox.showwarning("Serial Checker","You own a refurbished Nintendo Switch sold directly from Nintendo, they're probably patched if it was refurbished before the switch's \n 'Mariko' mainline switch patch, however false positives have been more likely with these versions")
-            skipCheck = True
-            serial_invalid = False
-        elif usrtype == "XWW1":
-            messagebox.showerror("Serial Checker", "Your Switch is 100% Patched")
-            skipCheck = True
-            serial_invalid = False
+        match usrtype:
+            case "XKW1" | "XKJ1":
+                messagebox.showerror("Serial Checker","You have a 'Mariko' switch, which has been patched unfortunately")
+                skipCheck = True
+                serial_invalid = False
+            case "XAK":
+                messagebox.showwarning("Serial Checker","You own a Korean nintendo switch, not much info is known about them, so it may or may not be patched.")
+                skipCheck = True
+                serial_invalid = False
+            case "XAW9":
+                messagebox.showwarning("Serial Checker","You own a refurbished Nintendo Switch sold directly from Nintendo, they're probably patched if it was refurbished before the switch's \n 'Mariko' mainline switch patch, however false positives have been more likely with these versions")
+                skipCheck = True
+                serial_invalid = False
+            case "XWW1":
+                messagebox.showerror("Serial Checker","Your Switch is 100% Patched")
+                skipCheck = True
+                serial_invalid = False
 
     if skipCheck == False:
 
